@@ -4,14 +4,14 @@
       <img class= "animated fadeInUp delay-1s" src="./assets/cross.svg"/>
       <h1 class="animated fadeInUp delay-2s">TH 151 Finals</h1>
       <h1 class="animated fadeInUp delay-2s">Cobbie's Catholic Creed</h1>
-      <button @click="showExp" class="animated flipInX delay-3s">Show explanations</button>
-      <p class="animated flipInX delay-3s" id="note">You can also hover over each line in the creed to toggle the explanations.</p>
+      <button @click="showExp" class="animated flipInX delay-button">Show explanations</button>
+      <p class="animated flipInX delay-button" id="note">You can also hover over each line in the creed to toggle the explanations.</p>
     </header>
     <!-- <div id="cross-container"></div> -->
 
   <div id="content-container">
     <!-- First paragraph -->
-    <p :class="[content, {'animated': isDone, 'fadeInLeftBig': isDone, 'delay-4s': isDone}]">
+    <p :class="[content, {'animated': isNotDone, 'fadeInLeftBig': isNotDone, 'delay-4s': isNotDone}]">
       <mark id="first-par">I believe in the God of Jesus of Nazareth: <br />
       a God of mystery and love, <br />
       a God present in but beyond the Church, <br />
@@ -20,38 +20,38 @@
     <p v-if="visible===true" class="explanation animated zoomIn">Nam gravida eu mi sit amet viverra. Nam ut libero quis ligula eleifend egestas. In posuere, massa at cursus blandit, libero quam lobortis lorem, a egestas arcu ex vitae ipsum. Vestibulum auctor placerat lorem et scelerisque. Praesent non tincidunt sem.</p>
 
     <!-- Second paragraph -->
-    <p :class="[content, {'animated': isDone, 'fadeInRightBig': isDone, 'delay-2nd': isDone}]">
+    <p :class="[content, {'animated': isNotDone, 'fadeInRightBig': isNotDone, 'delay-2nd': isNotDone}]">
      <mark id="second-par"> I believe in the message and revelation of Jesus Christ, <br />
 which is to bring God’s kingdom on Earth by taking the view of the victims.</mark><br>
 </p>
-    <p v-if="visible===true" class="explanation animated zoomIn">Nam gravida eu mi sit amet viverra. Nam ut libero quis ligula eleifend egestas. In posuere, massa at cursus blandit, libero quam lobortis lorem, a egestas arcu ex vitae ipsum. Vestibulum auctor placerat lorem et scelerisque. Praesent non tincidunt sem.</p>
+    <p v-if="visible===true" class="explanation explanation-2 animated zoomIn">Nam gravida eu mi sit amet viverra. Nam ut libero quis ligula eleifend egestas. In posuere, massa at cursus blandit, libero quam lobortis lorem, a egestas arcu ex vitae ipsum. Vestibulum auctor placerat lorem et scelerisque. Praesent non tincidunt sem.</p>
 
     <!-- Third paragraph -->
-    <p :class="[content, {'animated': isDone, 'fadeInLeftBig': isDone, 'delay-3rd': isDone}]">
+    <p :class="[content, {'animated': isNotDone, 'fadeInLeftBig': isNotDone, 'delay-3rd': isNotDone}]">
       <mark id="third-par">In the face of innocent suffering and vast injustice here on Earth, <br />
 I believe in God’s gratuitous and divine love, <br />
 for which we call Grace. </mark><br />
 </p>
-    <p v-if="visible===true" class="explanation animated zoomIn">Nam gravida eu mi sit amet viverra. Nam ut libero quis ligula eleifend egestas. In posuere, massa at cursus blandit, libero quam lobortis lorem, a egestas arcu ex vitae ipsum. Vestibulum auctor placerat lorem et scelerisque. Praesent non tincidunt sem.</p>
+    <p v-if="visible===true" class="explanation explanation-3 animated zoomIn">Nam gravida eu mi sit amet viverra. Nam ut libero quis ligula eleifend egestas. In posuere, massa at cursus blandit, libero quam lobortis lorem, a egestas arcu ex vitae ipsum. Vestibulum auctor placerat lorem et scelerisque. Praesent non tincidunt sem.</p>
 
 
      <!--Fourth paragraph -->
-    <p :class="[content, {'animated': isDone, 'fadeInRightBig': isDone, 'delay-4th': isDone}]">
+    <p :class="[content, {'animated': isNotDone, 'fadeInRightBig': isNotDone, 'delay-4th': isNotDone}]">
       <mark id="fourth-par">We cannot make God fit into our world and we cannot define God in our language; <br />
 but we can discover God through understanding Grace. </mark><br />
 
     </p>
-        <p v-if="visible===true" class="explanation animated zoomIn">Nam gravida eu mi sit amet viverra. Nam ut libero quis ligula eleifend egestas. In posuere, massa at cursus blandit, libero quam lobortis lorem, a egestas arcu ex vitae ipsum. Vestibulum auctor placerat lorem et scelerisque. Praesent non tincidunt sem.</p>
+        <p v-if="visible===true" class="explanation explanation-4 animated zoomIn">Nam gravida eu mi sit amet viverra. Nam ut libero quis ligula eleifend egestas. In posuere, massa at cursus blandit, libero quam lobortis lorem, a egestas arcu ex vitae ipsum. Vestibulum auctor placerat lorem et scelerisque. Praesent non tincidunt sem.</p>
 
 
     <!-- Fifth paragraph-->
-    <p :class="[content, {'animated': isDone, 'fadeInLeftBig': isDone, 'delay-5th': isDone}]">
+    <p :class="[content, {'animated': isNotDone, 'fadeInLeftBig': isNotDone, 'delay-5th': isNotDone}]">
       <mark id="fifth-par">As Catholics, we believe in scripture, in saints, in Mary, and many other symbols and teachings unique to our faith. <br />
  but these all come second to what defines us as a follower of Jesus and a person of God, <br>
 which is to make Jesus’ mission our own and translate this to action. </mark><br>
 
     </p>
-        <p v-if="visible===true" class="explanation animated zoomIn">Nam gravida eu mi sit amet viverra. Nam ut libero quis ligula eleifend egestas. In posuere, massa at cursus blandit, libero quam lobortis lorem, a egestas arcu ex vitae ipsum. Vestibulum auctor placerat lorem et scelerisque. Praesent non tincidunt sem.</p>
+        <p v-if="visible===true" class="explanation explanation-5 animated zoomIn">Nam gravida eu mi sit amet viverra. Nam ut libero quis ligula eleifend egestas. In posuere, massa at cursus blandit, libero quam lobortis lorem, a egestas arcu ex vitae ipsum. Vestibulum auctor placerat lorem et scelerisque. Praesent non tincidunt sem.</p>
 
   </div>
   </div>
@@ -72,8 +72,9 @@ export default {
         this.classList.remove('animated')
     }
   },
-  mounted: function(){
-    this.isDone = true
+  
+  beforeUpdate: function(){
+    this.isNotDone =false
   },
   data () {
     return {
@@ -82,7 +83,7 @@ export default {
       styleObject: {
         'background-color': 'rgba(31, 62, 90, 0.76)',
       },
-      isDone: false,
+      isNotDone: true,
       content: 'content'
     }
   }
@@ -126,6 +127,21 @@ background: rgba(31, 62, 90, 0.76);
 border-radius: 14px;
 font-style: italic
 }
+
+.explanation-2{
+  background: rgba(20, 80, 81, 0.76);
+}
+
+.explanation-3{
+  background: rgba(40, 28, 60, 0.76);
+}
+
+.explanation-4{
+background: rgba(60, 28, 49, 0.76);}
+
+.explanation-5{
+background: rgba(28, 37, 60, 0.76);}
+
 header{
   color: white;
   font-family: 'Merriweather',serif;
@@ -182,6 +198,9 @@ p{
   /* background: rgba(31, 62, 90, 0.76); */
 }
 
+.delay-button{
+    animation-delay: 3.65s;
+}
 .delay-2nd{
   animation-delay: 4.5s;
 }
