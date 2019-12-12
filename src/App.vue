@@ -4,8 +4,8 @@
       <img class= "animated fadeInUp delay-1s" src="./assets/cross.svg"/>
       <h1 class="animated fadeInUp delay-2s">TH 151 Finals</h1>
       <h1 class="animated fadeInUp delay-2s">Cobbie's Catholic Creed</h1>
-      <button @click="showExp" class="animated flipInX delay-button">Show explanations</button>
-      <p class="animated flipInX delay-button" id="note">You can also hover over each line in the creed to toggle the explanations.</p>
+      <button @click="showExp" class="animated flipInX delay-button">{{buttonText}} explanations</button>
+      <p class="animated flipInX delay-button" id="note">Click on the button above to toggle the explanations per section of the Creed.</p>
     </header>
     <!-- <div id="cross-container"></div> -->
 
@@ -65,7 +65,7 @@ export default {
   methods: {
     showExp: function(){
       this.visible = !this.visible;
-
+      this.buttonText === 'Show' ? this.buttonText = 'Hide' : this.buttonText = 'Show'
     },
     removeAnimations: function(){
       // var contentList = document.getElementsByClassName("content");
@@ -84,7 +84,8 @@ export default {
         'background-color': 'rgba(31, 62, 90, 0.76)',
       },
       isNotDone: true,
-      content: 'content'
+      content: 'content',
+      buttonText: 'Show'
     }
   }
 }
