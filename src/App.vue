@@ -1,21 +1,21 @@
 <template>
   <div id="app">
     <header>
-      <img src="./assets/cross.svg"/>
-      <h1>TH 151 Finals</h1>
-      <h1>Cobbie's Catholic Creed</h1>
-      <button>Show explanations</button>
-      <p id="note">You can also hover over each line in the creed to toggle the explanations.</p>
+      <img class="animated fadeInUpBig" src="./assets/cross.svg"/>
+      <h1 class="animated fadeInUpBig delay-1s">TH 151 Finals</h1>
+      <h1 class="animated fadeInUpBig delay-1s">Cobbie's Catholic Creed</h1>
+      <button class="animated flipInX delay-3s">Show explanations</button>
+      <p class="animated flipInX delay-3s" id="note">You can also hover over each line in the creed to toggle the explanations.</p>
     </header>
     <!-- <div id="cross-container"></div> -->
 
   <div id="content-container">
-    <p v-on="{mouseover: showExp, mouseleave: showExp}" class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent felis diam, facilisis tincidunt finibus quis, interdum et ex. Cras pulvinar tellus ac nulla convallis, at lacinia tellus tempus.</p>
+    <p class="content animated fadeInLeftBig delay-4s" v-on="{mouseover: showExp, mouseleave: showExp}" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent felis diam, facilisis tincidunt finibus quis, interdum et ex. Cras pulvinar tellus ac nulla convallis, at lacinia tellus tempus.</p>
     <p v-if="visible===true" class="explanation">Nam gravida eu mi sit amet viverra. Nam ut libero quis ligula eleifend egestas. In posuere, massa at cursus blandit, libero quam lobortis lorem, a egestas arcu ex vitae ipsum. Vestibulum auctor placerat lorem et scelerisque. Praesent non tincidunt sem.</p>
-    <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent felis diam, facilisis tincidunt finibus quis, interdum et ex. Cras pulvinar tellus ac nulla convallis, at lacinia tellus tempus.</p>
-    <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent felis diam, facilisis tincidunt finibus quis, interdum et ex. Cras pulvinar tellus ac nulla convallis, at lacinia tellus tempus.</p>
-    <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent felis diam, facilisis tincidunt finibus quis, interdum et ex. Cras pulvinar tellus ac nulla convallis, at lacinia tellus tempus.</p>
-    <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent felis diam, facilisis tincidunt finibus quis, interdum et ex. Cras pulvinar tellus ac nulla convallis, at lacinia tellus tempus.</p>
+    <p class="content animated fadeInRightBig delay-5s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent felis diam, facilisis tincidunt finibus quis, interdum et ex. Cras pulvinar tellus ac nulla convallis, at lacinia tellus tempus.</p>
+    <p class="content animated fadeInLeftBig delay-6s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent felis diam, facilisis tincidunt finibus quis, interdum et ex. Cras pulvinar tellus ac nulla convallis, at lacinia tellus tempus.</p>
+    <p class="content animated fadeInRightBig delay-7s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent felis diam, facilisis tincidunt finibus quis, interdum et ex. Cras pulvinar tellus ac nulla convallis, at lacinia tellus tempus.</p>
+    <p class="content animated fadeInLeftBig delay-8s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent felis diam, facilisis tincidunt finibus quis, interdum et ex. Cras pulvinar tellus ac nulla convallis, at lacinia tellus tempus.</p>
   </div>
   </div>
   
