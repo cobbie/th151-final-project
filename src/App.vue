@@ -4,6 +4,8 @@
       <img src="./assets/cross.svg"/>
       <h1>TH 151 Finals</h1>
       <h1>Cobbie's Catholic Creed</h1>
+      <button>Show explanations</button>
+      <p id="note">You can also hover over each line in the creed to toggle the explanations.</p>
     </header>
     <!-- <div id="cross-container"></div> -->
 
@@ -39,7 +41,8 @@ export default {
 
 <style> 
 body{
-  background-color:#1c253c;
+  /* background-color:#1c253c; */
+  background-color:black;
 }
 
 #app{
@@ -48,6 +51,14 @@ body{
 #cross-container{
   display: flex;
   justify-content: center
+}
+#note{
+  font-family: Open Sans;
+font-style: italic;
+font-size: 13px;
+line-height: 15px;
+color: #ffffff
+
 }
 
 
@@ -67,6 +78,23 @@ h1{
   /* margin-top: -1px; */
 }
 
+button{
+  background: #1C253C;
+border-radius: 11px;
+border-color: #1C253C;
+width: 274px;
+margin-top: 22px;
+cursor: pointer;
+outline: none;
+height: 62px;
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+color: #ffffff;
+font-size: 17px;
+line-height: 23px;
+}
+
 #content-container{
   padding-top: 20px;
   color: white;
@@ -78,9 +106,9 @@ h1{
 }
 p{
   padding-top: 9px;
-  cursor: pointer;
 }
-p:hover{
+.content:hover{
+  cursor: pointer;
   background-color:	#3c1c31;
 }
 
