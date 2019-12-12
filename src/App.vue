@@ -1,21 +1,21 @@
 <template>
   <div id="app">
     <header>
-      <img class="animated fadeInUpBig" src="./assets/cross.svg"/>
-      <h1 class="animated fadeInUpBig delay-1s">TH 151 Finals</h1>
-      <h1 class="animated fadeInUpBig delay-1s">Cobbie's Catholic Creed</h1>
-      <button class="animated flipInX delay-3s">Show explanations</button>
+      <img class="animated fadeInUp delay-1s" src="./assets/cross.svg"/>
+      <h1 class="animated fadeInUp delay-2s">TH 151 Finals</h1>
+      <h1 class="animated fadeInUp delay-2s">Cobbie's Catholic Creed</h1>
+      <button @click="showExp" class="animated flipInX delay-3s">Show explanations</button>
       <p class="animated flipInX delay-3s" id="note">You can also hover over each line in the creed to toggle the explanations.</p>
     </header>
     <!-- <div id="cross-container"></div> -->
 
   <div id="content-container">
     <p class="content animated fadeInLeftBig delay-4s" v-on="{mouseover: showExp, mouseleave: showExp}" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent felis diam, facilisis tincidunt finibus quis, interdum et ex. Cras pulvinar tellus ac nulla convallis, at lacinia tellus tempus.</p>
-    <p v-if="visible===true" class="explanation">Nam gravida eu mi sit amet viverra. Nam ut libero quis ligula eleifend egestas. In posuere, massa at cursus blandit, libero quam lobortis lorem, a egestas arcu ex vitae ipsum. Vestibulum auctor placerat lorem et scelerisque. Praesent non tincidunt sem.</p>
-    <p class="content animated fadeInRightBig delay-5s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent felis diam, facilisis tincidunt finibus quis, interdum et ex. Cras pulvinar tellus ac nulla convallis, at lacinia tellus tempus.</p>
-    <p class="content animated fadeInLeftBig delay-6s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent felis diam, facilisis tincidunt finibus quis, interdum et ex. Cras pulvinar tellus ac nulla convallis, at lacinia tellus tempus.</p>
-    <p class="content animated fadeInRightBig delay-7s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent felis diam, facilisis tincidunt finibus quis, interdum et ex. Cras pulvinar tellus ac nulla convallis, at lacinia tellus tempus.</p>
-    <p class="content animated fadeInLeftBig delay-8s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent felis diam, facilisis tincidunt finibus quis, interdum et ex. Cras pulvinar tellus ac nulla convallis, at lacinia tellus tempus.</p>
+    <p v-if="visible===true" class="explanation animated zoomIn">Nam gravida eu mi sit amet viverra. Nam ut libero quis ligula eleifend egestas. In posuere, massa at cursus blandit, libero quam lobortis lorem, a egestas arcu ex vitae ipsum. Vestibulum auctor placerat lorem et scelerisque. Praesent non tincidunt sem.</p>
+    <p class="content animated fadeInRightBig delay-2nd">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent felis diam, facilisis tincidunt finibus quis, interdum et ex. Cras pulvinar tellus ac nulla convallis, at lacinia tellus tempus.</p>
+    <p class="content animated fadeInLeftBig delay-3rd">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent felis diam, facilisis tincidunt finibus quis, interdum et ex. Cras pulvinar tellus ac nulla convallis, at lacinia tellus tempus.</p>
+    <p class="content animated fadeInRightBig delay-4th">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent felis diam, facilisis tincidunt finibus quis, interdum et ex. Cras pulvinar tellus ac nulla convallis, at lacinia tellus tempus.</p>
+    <p class="content animated fadeInLeftBig delay-5th">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent felis diam, facilisis tincidunt finibus quis, interdum et ex. Cras pulvinar tellus ac nulla convallis, at lacinia tellus tempus.</p>
   </div>
   </div>
   
@@ -61,7 +61,13 @@ color: #ffffff
 
 }
 
-
+.explanation{
+  /* width: 807px; */
+height: 80px;
+padding-left:20px;
+background: rgba(31, 62, 90, 0.76);
+border-radius: 14px;
+}
 header{
   color: white;
   font-family: Merriweather;
@@ -82,11 +88,11 @@ button{
   background: #1C253C;
 border-radius: 11px;
 border-color: #1C253C;
-width: 274px;
+width: 234px;
 margin-top: 22px;
 cursor: pointer;
 outline: none;
-height: 62px;
+height: 47px;
 font-family: Open Sans;
 font-style: normal;
 font-weight: normal;
@@ -96,20 +102,40 @@ line-height: 23px;
 }
 
 #content-container{
-  padding-top: 20px;
+  /* padding-top: 20px; */
   color: white;
   height: 500px;
   font-family: 'Open Sans';
   width: 760px;
   margin: 0 auto;
+  margin-top:40px
 
 }
 p{
   padding-top: 9px;
 }
+
+.content{
+  padding-left:20px;
+}
 .content:hover{
   cursor: pointer;
-  background-color:	#3c1c31;
+  /* background-color:	#3c1c31; */
+  background: rgba(31, 62, 90, 0.76);
+}
+
+.delay-2nd{
+  animation-delay: 4.5s;
+}
+.delay-3rd{
+  animation-delay: 5s
+}
+.delay-4th{
+  animation-delay: 5.5s
+}
+
+.delay-5th{
+  animation-delay: 6s;
 }
 
 </style>
