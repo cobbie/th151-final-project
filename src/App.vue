@@ -11,7 +11,7 @@
 
   <div id="content-container">
     <!-- First paragraph -->
-    <p class="content animated fadeInLeftBig delay-4s">
+    <p :class="[content, {'animated': isDone, 'fadeInLeftBig': isDone, 'delay-4s': isDone}]">
       <mark id="first-par">I believe in the God of Jesus of Nazareth: <br />
       a God of mystery and love, <br />
       a God present in but beyond the Church, <br />
@@ -20,14 +20,14 @@
     <p v-if="visible===true" class="explanation animated zoomIn">Nam gravida eu mi sit amet viverra. Nam ut libero quis ligula eleifend egestas. In posuere, massa at cursus blandit, libero quam lobortis lorem, a egestas arcu ex vitae ipsum. Vestibulum auctor placerat lorem et scelerisque. Praesent non tincidunt sem.</p>
 
     <!-- Second paragraph -->
-    <p class="content animated fadeInRightBig delay-2nd">
+    <p :class="[content, {'animated': isDone, 'fadeInRightBig': isDone, 'delay-2nd': isDone}]">
      <mark id="second-par"> I believe in the message and revelation of Jesus Christ, <br />
 which is to bring God’s kingdom on Earth by taking the view of the victims.</mark><br>
 </p>
     <p v-if="visible===true" class="explanation animated zoomIn">Nam gravida eu mi sit amet viverra. Nam ut libero quis ligula eleifend egestas. In posuere, massa at cursus blandit, libero quam lobortis lorem, a egestas arcu ex vitae ipsum. Vestibulum auctor placerat lorem et scelerisque. Praesent non tincidunt sem.</p>
 
     <!-- Third paragraph -->
-    <p class="content animated fadeInLeftBig delay-3rd">
+    <p :class="[content, {'animated': isDone, 'fadeInLeftBig': isDone, 'delay-3rd': isDone}]">
       <mark id="third-par">In the face of innocent suffering and vast injustice here on Earth, <br />
 I believe in God’s gratuitous and divine love, <br />
 for which we call Grace. </mark><br />
@@ -36,7 +36,7 @@ for which we call Grace. </mark><br />
 
 
      <!--Fourth paragraph -->
-    <p class="content animated fadeInRightBig delay-4th">
+    <p :class="[content, {'animated': isDone, 'fadeInRightBig': isDone, 'delay-4th': isDone}]">
       <mark id="fourth-par">We cannot make God fit into our world and we cannot define God in our language; <br />
 but we can discover God through understanding Grace. </mark><br />
 
@@ -45,7 +45,7 @@ but we can discover God through understanding Grace. </mark><br />
 
 
     <!-- Fifth paragraph-->
-    <p class="content animated fadeInLeftBig delay-5th">
+    <p :class="[content, {'animated': isDone, 'fadeInLeftBig': isDone, 'delay-5th': isDone}]">
       <mark id="fifth-par">As Catholics, we believe in scripture, in saints, in Mary, and many other symbols and teachings unique to our faith. <br />
  but these all come second to what defines us as a follower of Jesus and a person of God, <br>
 which is to make Jesus’ mission our own and translate this to action. </mark><br>
@@ -65,9 +65,15 @@ export default {
   methods: {
     showExp: function(){
       this.visible = !this.visible;
-      document.getElementsByClassName("content").classList.remove("animated")
 
+    },
+    removeAnimations: function(){
+      // var contentList = document.getElementsByClassName("content");
+        this.classList.remove('animated')
     }
+  },
+  mounted: function(){
+    this.isDone = true
   },
   data () {
     return {
@@ -75,13 +81,16 @@ export default {
       visible: false,
       styleObject: {
         'background-color': 'rgba(31, 62, 90, 0.76)',
-      }
+      },
+      isDone: false,
+      content: 'content'
     }
   }
 }
 </script>
 
 <style> 
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans&display=swap');
 body{
   /* background-color:#1c253c; */
   background-color:black;
@@ -99,7 +108,7 @@ mark{
   justify-content: center
 }
 #note{
-  font-family: Open Sans;
+  font-family: 'Open Sans',sans-serif;
 font-style: italic;
 font-size: 13px;
 line-height: 15px;
@@ -119,7 +128,7 @@ font-style: italic
 }
 header{
   color: white;
-  font-family: Merriweather;
+  font-family: 'Merriweather',serif;
   text-align: center;
   width: 100%;
   margin: 0 auto
@@ -142,7 +151,7 @@ margin-top: 22px;
 cursor: pointer;
 outline: none;
 height: 47px;
-font-family: Open Sans;
+font-family: 'Open Sans',sans-serif;
 font-style: normal;
 font-weight: normal;
 color: #ffffff;
@@ -154,7 +163,7 @@ line-height: 23px;
   /* padding-top: 20px; */
   color: white;
   height: 500px;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   width: 760px;
   margin: 0 auto;
   margin-top:40px
