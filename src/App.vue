@@ -17,14 +17,18 @@
       a God present in but beyond the Church, <br />
       whom we cannot and will not ever fully understand. </mark><br />
 </p>
-    <p v-if="visible===true" class="explanation animated zoomIn">Nam gravida eu mi sit amet viverra. Nam ut libero quis ligula eleifend egestas. In posuere, massa at cursus blandit, libero quam lobortis lorem, a egestas arcu ex vitae ipsum. Vestibulum auctor placerat lorem et scelerisque. Praesent non tincidunt sem.</p>
+    <p v-if="visible===true" class="explanation animated zoomIn">
+One of the most impactful things I learned this semester is that the God that has been taught to me - the God I grew up with and used to believe - is most likely nothing even close to depicting what God is actually like. While there are other things that remained true, such as God being a God of love, most of what we know about God has been limited to human interpretation.
+      </p>
 
     <!-- Second paragraph -->
     <p :class="[content, {'animated': isNotDone, 'fadeInRightBig': isNotDone, 'delay-2nd': isNotDone}]">
      <mark id="second-par"> I believe in the message and revelation of Jesus Christ, <br />
 which is to bring God’s kingdom on Earth by taking the view of the victims.</mark><br>
 </p>
-    <p v-if="visible===true" class="explanation explanation-2 animated zoomIn">Nam gravida eu mi sit amet viverra. Nam ut libero quis ligula eleifend egestas. In posuere, massa at cursus blandit, libero quam lobortis lorem, a egestas arcu ex vitae ipsum. Vestibulum auctor placerat lorem et scelerisque. Praesent non tincidunt sem.</p>
+    <p v-if="visible===true" class="explanation explanation-2 animated zoomIn">
+      We can speak of God through Jesus. We must acknowledge that Jesus was truly human - not someone like Thanos or Luke Skywalker, which is the image of most people - in order to acknowledge one of the central principles of Christianity, which is that God became man. Looking at Jesus’ life and the message he wanted to spread leads us to this view of the victims, which is central to the Christian faith.
+      </p>
 
     <!-- Third paragraph -->
     <p :class="[content, {'animated': isNotDone, 'fadeInLeftBig': isNotDone, 'delay-3rd': isNotDone}]">
@@ -32,7 +36,9 @@ which is to bring God’s kingdom on Earth by taking the view of the victims.</m
 I believe in God’s gratuitous and divine love, <br />
 for which we call Grace. </mark><br />
 </p>
-    <p v-if="visible===true" class="explanation explanation-3 animated zoomIn">Nam gravida eu mi sit amet viverra. Nam ut libero quis ligula eleifend egestas. In posuere, massa at cursus blandit, libero quam lobortis lorem, a egestas arcu ex vitae ipsum. Vestibulum auctor placerat lorem et scelerisque. Praesent non tincidunt sem.</p>
+    <p v-if="visible===true" class="explanation explanation-3 animated zoomIn">
+      One of the most important questions is to ask: how can we speak meaningfully of God in the face of these evils? This leads us to understand that God’s unconditional and gratuitous love does not work within the reward-and-punishment frameworks and limitations of human understanding of God.
+      </p>
 
 
      <!--Fourth paragraph -->
@@ -41,7 +47,9 @@ for which we call Grace. </mark><br />
 but we can discover God through understanding Grace. </mark><br />
 
     </p>
-        <p v-if="visible===true" class="explanation explanation-4 animated zoomIn">Nam gravida eu mi sit amet viverra. Nam ut libero quis ligula eleifend egestas. In posuere, massa at cursus blandit, libero quam lobortis lorem, a egestas arcu ex vitae ipsum. Vestibulum auctor placerat lorem et scelerisque. Praesent non tincidunt sem.</p>
+        <p v-if="visible===true" class="explanation explanation-4 animated zoomIn">
+          Now connecting some of the previous concepts, although we can’t ever get close to truly defining God, that doesn’t mean that we should simply stop there. We can get to know God as best we can, through our human limitations, through Grace.
+        </p>
 
 
     <!-- Fifth paragraph-->
@@ -51,7 +59,9 @@ but we can discover God through understanding Grace. </mark><br />
 which is to make Jesus’ mission our own and translate this to action. </mark><br>
 
     </p>
-        <p v-if="visible===true" class="explanation explanation-5 animated zoomIn">Nam gravida eu mi sit amet viverra. Nam ut libero quis ligula eleifend egestas. In posuere, massa at cursus blandit, libero quam lobortis lorem, a egestas arcu ex vitae ipsum. Vestibulum auctor placerat lorem et scelerisque. Praesent non tincidunt sem.</p>
+        <p v-if="visible===true" class="explanation explanation-5 animated zoomIn">
+          Many Catholics treat integral beliefs and practices of the Christian faith as rituals, and don’t go beyond that. This even extends to gatekeeping, as we tend to define each other based on what rules they follow rather than their humanity. While believing and practicing certain things are important, we should always remember that what should be the essence of our Christian faith is to act upon the message and mission Jesus imparted to this world.
+          </p>
 
   </div>
   </div>
@@ -120,7 +130,7 @@ color: #ffffff
 
 .explanation{
   /* width: 807px; */
-height: 80px;
+height: 100px;
 margin-top: 20px;
 padding-left:20px;
 padding-right: 20px;
@@ -131,17 +141,25 @@ font-style: italic
 
 .explanation-2{
   background: rgba(20, 80, 81, 0.76);
+height: 120px;
+
 }
 
 .explanation-3{
   background: rgba(40, 28, 60, 0.76);
+
 }
 
 .explanation-4{
-background: rgba(60, 28, 49, 0.76);}
+background: rgba(60, 28, 49, 0.76);
+height: 80px;
+}
 
 .explanation-5{
-background: rgba(28, 37, 60, 0.76);}
+background: rgba(28, 37, 60, 0.76);
+height: 120px;
+
+}
 
 header{
   color: white;
