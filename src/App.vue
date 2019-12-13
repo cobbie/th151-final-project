@@ -12,10 +12,10 @@
   <div id="content-container">
     <!-- First paragraph -->
     <p :class="[content, {'animated': isNotDone, 'fadeInLeftBig': isNotDone, 'delay-4s': isNotDone}]">
-      <mark id="first-par">I believe in the God of Jesus of Nazareth: <br />
+I believe in the God of Jesus of Nazareth: <br />
       a God of mystery and love, <br />
       a God present in but beyond the Church, <br />
-      whom we cannot and will not ever fully understand. </mark><br />
+      whom we cannot and will not ever fully understand. <br />
 </p>
     <p v-if="visible===true" class="explanation animated zoomIn">
 One of the most impactful things I learned this semester is that the God that has been taught to me - the God I grew up with and used to believe - is most likely nothing even close to depicting what God is actually like. While there are other things that remained true, such as God being a God of love, most of what we know about God has been limited to human interpretation.
@@ -23,40 +23,40 @@ One of the most impactful things I learned this semester is that the God that ha
 
     <!-- Second paragraph -->
     <p :class="[content, {'animated': isNotDone, 'fadeInRightBig': isNotDone, 'delay-2nd': isNotDone}]">
-     <mark id="second-par"> I believe in the message and revelation of Jesus Christ, <br />
-which is to bring God’s kingdom on Earth by taking the view of the victims.</mark><br>
+I believe in the message and revelation of Jesus Christ, <br />
+which is to bring God’s kingdom on Earth by taking the view of the victims.<br>
 </p>
     <p v-if="visible===true" class="explanation explanation-2 animated zoomIn">
-      We can speak of God through Jesus. We must acknowledge that Jesus was truly human - not someone like Thanos or Luke Skywalker, which is the image of most people - in order to acknowledge one of the central principles of Christianity, which is that God became man. Looking at Jesus’ life and the message he wanted to spread leads us to this view of the victims, which is central to the Christian faith.
+      We can speak of God through Jesus. We must acknowledge that Jesus was truly human - not someone like Thanos or Luke Skywalker, which is the image of most people - in order to acknowledge one of the central principles of Christianity, which is that God became man. Looking at Jesus’ life and the message he wanted to spread leads us to this view of the victims, which is also central to the Christian faith.
       </p>
 
     <!-- Third paragraph -->
     <p :class="[content, {'animated': isNotDone, 'fadeInLeftBig': isNotDone, 'delay-3rd': isNotDone}]">
-      <mark id="third-par">In the face of innocent suffering and vast injustice here on Earth, <br />
+In the face of innocent suffering and vast injustice here on Earth, <br />
 I believe in God’s gratuitous and divine love, <br />
-for which we call Grace. </mark><br />
+for which we call Grace. <br />
 </p>
     <p v-if="visible===true" class="explanation explanation-3 animated zoomIn">
-      One of the most important questions is to ask: how can we speak meaningfully of God in the face of these evils? This leads us to understand that God’s unconditional and gratuitous love does not work within the reward-and-punishment frameworks and limitations of human understanding of God.
+      One of the most important questions to ask about our faith is this: how can we speak meaningfully of God in the face of these evils? This leads us to understand that God’s unconditional and gratuitous love does not work within the reward-and-punishment frameworks and limitations of the human understanding of God.
       </p>
 
 
      <!--Fourth paragraph -->
     <p :class="[content, {'animated': isNotDone, 'fadeInRightBig': isNotDone, 'delay-4th': isNotDone}]">
-      <mark id="fourth-par">We cannot make God fit into our world and we cannot define God in our language; <br />
-but we can discover God through understanding Grace. </mark><br />
+We cannot make God fit into our world and we cannot define God in our language; <br />
+but we can discover God through understanding Grace. <br />
 
     </p>
         <p v-if="visible===true" class="explanation explanation-4 animated zoomIn">
-          Now connecting some of the previous concepts, although we can’t ever get close to truly defining God, that doesn’t mean that we should simply stop there. We can get to know God as best we can, through our human limitations, through Grace.
+          Now connecting some of the previous concepts, although we can’t ever get close to truly defining God, that doesn’t mean that we should simply stop there. We can get to know God as best we can, within our human limitations, through Grace.
         </p>
 
 
     <!-- Fifth paragraph-->
     <p :class="[content, {'animated': isNotDone, 'fadeInLeftBig': isNotDone, 'delay-5th': isNotDone}]">
-      <mark id="fifth-par">As Catholics, we believe in scripture, in saints, in Mary, and many other symbols and teachings unique to our faith. <br />
- but these all come second to what defines us as a follower of Jesus and a person of God, <br>
-which is to make Jesus’ mission our own and translate this to action. </mark><br>
+As Catholics, we believe in teachings from scripture, in saints and in Mary, in the sacraments, and in many other symbols and practices unique to our faith. <br />
+But these all come second to what defines us as a follower of Jesus and a person of God, <br>
+which is to make Jesus’ mission our own and translate this into action. <br>
 
     </p>
         <p v-if="visible===true" class="explanation explanation-5 animated zoomIn">
@@ -105,7 +105,7 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans&display=swap');
 body{
   /* background-color:#1c253c; */
-  background-color:black;
+  background-color:#949CA3;
   height: 120%;
 }
 mark{
@@ -140,23 +140,27 @@ font-style: italic
 }
 
 .explanation-2{
-  background: rgba(20, 80, 81, 0.76);
+  /* background: rgba(20, 80, 81, 0.76); */
+  background: rgba(179,154,103, 0.76);
 height: 120px;
 
 }
 
 .explanation-3{
-  background: rgba(40, 28, 60, 0.76);
+  /* background: rgba(40, 28, 60, 0.76); */
+  background: rgba(216,174,70, 0.76)
+
 
 }
 
 .explanation-4{
-background: rgba(60, 28, 49, 0.76);
+/* background: rgba(60, 28, 49, 0.76); */
+background: rgba(178,76,46,0.76);
 height: 80px;
 }
 
 .explanation-5{
-background: rgba(28, 37, 60, 0.76);
+background: rgb(51, 71, 98, 0.76);
 height: 120px;
 
 }
@@ -178,9 +182,10 @@ h1{
 }
 
 button{
-  background: #1C253C;
+  /* background: #1C253C; */
+  background: #334762;
 border-radius: 11px;
-border-color: #1C253C;
+border-color: #334762;
 width: 234px;
 margin-top: 22px;
 cursor: pointer;
@@ -239,17 +244,24 @@ p{
 }
 
 #second-par{
-  background: rgba(20, 80, 81, 0.76);
+  /* background: rgba(20, 80, 81, 0.76); */
+  background: rgba(179,154,103, 0.76)
 }
 
 #third-par{
-  background: rgba(40, 28, 60, 0.76);
+  /* background: rgba(40, 28, 60, 0.76); */
+  background: rgba(216,174,70, 0.76)
 }
 
 #fourth-par{
-background: rgba(60, 28, 49, 0.76);}
+/* background: rgba(60, 28, 49, 0.76); */
+background: rgba(178,76,46,0.76)
+}
 
 #fifth-par{
-background: rgba(28, 37, 60, 0.76);}
+/* background: rgba(28, 37, 60, 0.76); */
+background: rgb(51, 71, 98, 0.76)
+}
+/* #1C253C */
 
 </style>
