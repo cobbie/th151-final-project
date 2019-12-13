@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <header>
-      <img class= "animated fadeInUp delay-1s" src="./assets/cross.svg"/>
+      <img :class="['animated', {'fadeInUp': isNotDone, 'delay-1s': isNotDone, 'pulse': !isNotDone, 'infinite': !isNotDone}]" src="./assets/cross.svg"/>
       <h1 class="animated fadeInUp delay-2s">TH 151 Finals</h1>
       <h1 class="animated fadeInUp delay-2s">Cobbie's Catholic Creed</h1>
       <button @click="showExp" class="animated flipInX delay-button">{{buttonText}} explanations</button>
