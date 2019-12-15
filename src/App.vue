@@ -264,4 +264,114 @@ background: rgb(51, 71, 98, 0.76)
 }
 /* #1C253C */
 
+/* MEDIA QUERIES */
+
+/* iPhone 6/7/8 plus */
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+#content-container{
+    width: 90%;
+  }
+  .explanation{
+    height: 260px;
+  }
+.explanation-2{
+height: 280px;
+
+}
+
+.explanation-3{
+  height: 220px;
+
+
+}
+
+.explanation-4{
+height: 170px;
+}
+
+.explanation-5{
+background: rgb(51, 71, 98, 0.76);
+height: 300px;
+
+}
+}
+
+/* iPhone 6,7,8 + */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+  #content-container{
+    width: 90%;
+  }
+
+  .explanation{
+    height: 230px;
+  }
+.explanation-2{
+height: 240px;
+
+}
+
+.explanation-3{
+  height: 200px;
+
+
+}
+
+.explanation-4{
+/* background: rgba(60, 28, 49, 0.76); */
+background: rgba(178,76,46,0.76);
+height: 150px;
+}
+
+.explanation-5{
+background: rgb(51, 71, 98, 0.76);
+height: 280px;
+
+}
+
+}
+
+/* Galaxy S5 */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+
+#content-container,
+#note{
+    width: 85%;
+    margin: 0 auto;
+  }
+  .explanation{
+    height: 280px;
+  }
+.explanation-2{
+height: 300px;
+
+}
+
+.explanation-3{
+  height: 260px;
+
+
+}
+
+.explanation-4{
+height: 190px;
+}
+
+.explanation-5{
+height: 340px;
+
+}
+}
+
 </style>
